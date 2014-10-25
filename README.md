@@ -1,16 +1,14 @@
-# php-getting-started
+# heroku-php-status-proxy
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
-
-This application support the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+Simple Heroku hosted PHP proxy to check the HTTP status of websites. The repository is based on Heroku's [php-getting-started](https://github.com/heroku/php-getting-started). It's purpose for [YEAHWHAT?!](http://yeahwh.at) is to allow requesting AJAX request without the proper "Access-Control-Allow-Origin" headers set. For more information, checkout our [fallback webserver](https://github.com/yeahwhat-mc/fallback-webserver).
 
 ## Running Locally
 
 Make sure you have PHP, Apache and Composer installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
+$ git clone https://github.com/yeahwhat-mc/heroku-php-status-proxy.git # or clone your own fork
+$ cd php-status-proxy
 $ composer update
 $ foreman start web
 ```
@@ -24,9 +22,3 @@ $ heroku create
 $ git push heroku master
 $ heroku open
 ```
-
-## Documentation
-
-For more information about using PHP on Heroku, see these Dev Center articles:
-
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
